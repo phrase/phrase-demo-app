@@ -2,15 +2,33 @@
 for https://demo.phrase.com/
 
 ## Project setup
-
-```bash
+```
 npm install
 ```
 
-## Compile and hot-reload for development
-
-```bash
+### Compiles and hot-reloads for development
+```
 npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Run your unit tests
+```
+npm run test:unit
+```
+
+### Run your end-to-end tests
+```
+npm run test:e2e
+```
+
+### Lints and fixes files
+```
+npm run lint
 ```
 
 ## I18n
@@ -19,4 +37,4 @@ npm run serve
 Vue.js plugin for i18n, see https://kazupon.github.io/vue-i18n/
 
 ### vue-i18n-phrase-in-context-editor
-Vue.js plugin for Phrase In-Context editor, see https://phrase.github.io/vue-i18n-phrase-in-context-editor
+Vue.
