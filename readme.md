@@ -1,23 +1,22 @@
-# Vue I18n Phrase In-Context Editor basic demo
+# Phrase demo app
+for https://demo.phrase.com/
 
-## How to use the demo
-
-### Install dependencies & run
+## Project setup
 
 ```bash
 npm install
+```
+
+## Compile and hot-reload for development
+
+```bash
 npm run serve
 ```
 
-### Login to Phrase demo project
+## I18n
 
-This demo uses special, demo [Phrase](https://phrase.com) project. Use authentication info written below to login:
+### vue-i18n
+Vue.js plugin for i18n, see https://kazupon.github.io/vue-i18n/
 
-```bash
-E-Mail: demo@phrase.com
-Password: phrase
-```
-
-## More information
-
-For more info, please have a look at [Vue I18n Phrase In-Context Editor documentation](https://phrase.github.io/vue-i18n-phrase-in-context-editor).
+### vue-i18n-phrase-in-context-editor
+Vue.js plugin for Phrase In-Context editor, see https://phrase.github.io/vue-i18n-phrase-in-context-editor
