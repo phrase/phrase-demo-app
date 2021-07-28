@@ -1,22 +1,39 @@
 # Phrase demo app
-for https://demo.phrase.com/
+Demo app to showcase Phrase In-Context Editor: https://demo.phrase.com/
 
 ## Project setup
-
-```bash
+```
 npm install
 ```
 
-## Compile and hot-reload for development
-
-```bash
+### Compiles and hot-reloads for development
+```
 npm run serve
 ```
 
-## I18n
+### Compiles and minifies for production
+```
+npm run build
+```
 
-### vue-i18n
-Vue.js plugin for i18n, see https://kazupon.github.io/vue-i18n/
+### Run your unit tests
+```
+npm run test:unit
+```
 
-### vue-i18n-phrase-in-context-editor
-Vue.js plugin for Phrase In-Context editor, see https://phrase.github.io/vue-i18n-phrase-in-context-editor
+### Run your end-to-end tests
+```
+npm run test:e2e
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+## I18n dependencies
+
+- [vue-i18n-phrase-in-context-editor](https://www.npmjs.com/package/vue-i18n-phrase-in-context-editor)
+- [vue-i18n](https://www.npmjs.com/package/vue-i18n)
+- [vue-cli-plugin-i18n](https://www.npmjs.com/package/vue-cli-plugin-i18n)
+- [vue-i18n-loader](https://github.com/intlify/vue-i18n-loader/tree/master)
