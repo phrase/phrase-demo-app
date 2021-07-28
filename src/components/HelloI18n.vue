@@ -21,7 +21,19 @@ export default {
 <i18n>
 {
   "en": {
-    "title": "Dummy title",
+    "title": "English",
+    "headline": "",
+    "intro": "",
+    "text": ""
+  },
+  "fr": {
+    "title": "Français",
+    "headline": "",
+    "intro": "",
+    "text": ""
+  },
+  "de": {
+    "title": "Deutsch",
     "headline": "",
     "intro": "",
     "text": ""
