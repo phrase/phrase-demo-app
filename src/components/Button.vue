@@ -1,26 +1,19 @@
 <template>
   <div>
-    <a href="">
-      <span>{{ $t('button_label') }}</span>
+    <a :href="link" target="_blank">
+      <slot />
     </a>
   </div>
 </template>
 
 <script lang="ts">
 export default {
-  name: 'Button',
+  name: "Button",
+  props: ["link"],
   data() {
-    return {}
-  }
-}
+    return {};
+  },
+};
 </script>
-
-<i18n>
-{
-  "en": {
-    "button_label": ""
-  }
-}
-</i18n>
 
 <style lang="scss" src="../assets/stylesheets/components/hero.scss"></style>
