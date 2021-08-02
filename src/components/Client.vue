@@ -10,7 +10,10 @@
 export default {
   name: "Client",
   components: {},
-  props: ['link', 'name'],
+  props: {
+    'link': String,
+    'name': String
+  },
   data() {
     return {};
   },

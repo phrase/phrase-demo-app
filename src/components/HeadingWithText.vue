@@ -1,7 +1,7 @@
 <template>
   <div class="heading-with-text">
-    <h2>{{ title }}</h2>
-    <div>
+    <h2 class="text-l">{{ title }}</h2>
+    <div class="text-m">
       <slot />
     </div>
   </div>

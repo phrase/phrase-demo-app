@@ -1,37 +1,29 @@
 <template>
   <div id="app">
     <Nav/>
-
     <Hero/>
-
-    <ContentSection>
-      <HelloI18n/>
-    </ContentSection>
-
-    <ContentSection>
+    <ContentSection layout="split">
       <HeadingWithText :title="$t('integrate_title')">
         {{ $t("integrate_text") }}
       </HeadingWithText>
-      <img alt="Vue logo" src="./assets/logo.png">
+      <img alt="Vue logo" src="./assets/integrate.png">
     </ContentSection>
 
     <ContentSection>
-      <h2>{{ $t("clients_title") }}</h2>
+      <h2 class="text-l">{{ $t("clients_title") }}</h2>
       <ClientList/>
     </ContentSection>
 
-    <ContentSection>
-      <img alt="Vue logo" src="./assets/logo.png">
+    <ContentSection layout="split">
+      <img alt="Vue logo" src="./assets/advantages.png">
       <HeadingWithText :title="$t('advantages_title')">
         {{ $t("advantages_text") }}
       </HeadingWithText>
     </ContentSection>
-
   </div>
 </template>
 
 <script lang="ts">
-import HelloI18n from "./components/HelloI18n.vue";
 import Nav from "./components/Nav.vue";
 import Hero from "./components/Hero.vue";
 import ContentSection from "./components/ContentSection.vue";
@@ -46,7 +38,6 @@ export default {
     Nav,
     Hero,
     ContentSection,
-    HelloI18n
   }
 }
 </script>
