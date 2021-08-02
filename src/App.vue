@@ -1,25 +1,32 @@
 <template>
   <div id="app">
     <Nav/>
+
     <Hero/>
+
     <ContentSection>
       <HelloI18n/>
     </ContentSection>
+
     <ContentSection>
       <HeadingWithText :title="$t('integrate_title')">
         {{ $t("integrate_text") }}
       </HeadingWithText>
       <img alt="Vue logo" src="./assets/logo.png">
     </ContentSection>
+
     <ContentSection>
       <h2>{{ $t("clients_title") }}</h2>
+      <ClientList/>
     </ContentSection>
+
     <ContentSection>
       <img alt="Vue logo" src="./assets/logo.png">
       <HeadingWithText :title="$t('advantages_title')">
         {{ $t("advantages_text") }}
       </HeadingWithText>
     </ContentSection>
+
   </div>
 </template>
 
@@ -29,10 +36,12 @@ import Nav from "./components/Nav.vue";
 import Hero from "./components/Hero.vue";
 import ContentSection from "./components/ContentSection.vue";
 import HeadingWithText from "@/components/HeadingWithText.vue";
+import ClientList from "@/components/ClientList.vue";
 
 export default {
   name: 'App',
   components: {
+    ClientList,
     HeadingWithText,
     Nav,
     Hero,
