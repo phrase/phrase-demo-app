@@ -6,7 +6,7 @@
       <HeadingWithText :title="$t('integrate_title')">
         {{ $t("integrate_text") }}
       </HeadingWithText>
-      <img alt="Vue logo" src="./assets/integrate.png">
+      <img alt="" src="./assets/integrate.png">
     </ContentSection>
 
     <ContentSection>
@@ -15,7 +15,7 @@
     </ContentSection>
 
     <ContentSection layout="split">
-      <img alt="Vue logo" src="./assets/advantages.png">
+      <img alt="" src="./assets/advantages.png">
       <HeadingWithText :title="$t('advantages_title')">
         {{ $t("advantages_text") }}
       </HeadingWithText>
