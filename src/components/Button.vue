@@ -9,7 +9,9 @@
 <script lang="ts">
 export default {
   name: "Button",
-  props: ["link"],
+  props: {
+    'link': String,
+  },
   data() {
     return {};
   },
