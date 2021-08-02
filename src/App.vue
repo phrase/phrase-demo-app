@@ -2,8 +2,10 @@
   <div id="app">
     <Nav />
     <Hero />
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloI18n />
+    <ContentSection>
+      <img alt="Vue logo" src="./assets/logo.png">
+      <HelloI18n />
+    </ContentSection>
   </div>
 </template>
 
@@ -11,12 +13,14 @@
 import HelloI18n from "./components/HelloI18n.vue";
 import Nav from "./components/Nav.vue";
 import Hero from "./components/Hero.vue";
+import ContentSection from "./components/ContentSection.vue";
 
 export default {
   name: 'App',
   components: {
     Nav,
     Hero,
+    ContentSection,
     HelloI18n
   }
 }
