@@ -4,10 +4,10 @@
       <h2 class="text-xl hero__title">{{ $t("hero_title") }}</h2>
       <p class="text-m hero__description">{{ $t("hero_description") }}</p>
       <Button class="hero__button" hierarchy="primary"
-              link="https://phrase.com/blog/posts/use-phrase-in-context-editor/">
+              link="https://help.phrase.com/help/set-up-in-context-editor">
         {{ $t("hero_link_docs") }}
       </Button>
-      <Button class="hero__button" hierarchy="secondary" link="">
+      <Button class="hero__button" hierarchy="secondary" link="https://github.com/phrase/phrase-demo-app">
         {{ $t("hero_link_code") }}
       </Button>
     </div>
@@ -35,7 +35,11 @@ export default {
   background-color: var(--color-blue);
   color: var(--color-white);
   text-align: center;
-  padding: 4.5rem 0;
+  padding: 6rem 0;
+
+  @include breakpoint-s {
+    padding: 3rem 0;
+  }
 
   &__description, &__title {
     max-width: 800px;
@@ -49,8 +53,8 @@ export default {
   }
 
   &__description {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
   }
 
   @media (min-width: 700px) {

@@ -20,7 +20,7 @@ export default {
 @import "../assets/stylesheets/mixins.scss";
 
 .content-section {
-  margin: 8rem 4rem 12rem;
+  margin: 6rem 4rem 10rem;
 
   @include breakpoint-m {
     margin: 4rem 0;
@@ -55,10 +55,10 @@ export default {
   }
 
   &:last-child {
-    margin-bottom: 10rem;
+    margin-bottom: 6rem;
 
     @include breakpoint-m {
-      margin-bottom: 5rem;
+      margin-bottom: 4rem;
     }
   }
 }
