@@ -1,8 +1,8 @@
 <template>
   <section class="hero">
     <div class="centered">
-      <h2 class="text-xl">{{ $t("hero_title") }}</h2>
-      <p class="text-m">{{ $t("hero_description") }}</p>
+      <h2 class="text-xl hero__title">{{ $t("hero_title") }}</h2>
+      <p class="text-m hero__description">{{ $t("hero_description") }}</p>
       <Button link="https://phrase.com/blog/posts/use-phrase-in-context-editor/">
         {{ $t("hero_link_docs") }}
       </Button>
