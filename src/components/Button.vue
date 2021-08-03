@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <a :href="link" target="_blank">
+  <div class="button text-m">
+    <a :class="`button__link button__link--${hierarchy}`" :href="link" target="_blank">
       <slot />
     </a>
   </div>
@@ -11,6 +11,7 @@ export default {
   name: "Button",
   props: {
     'link': String,
+    'hierarchy': String,
   },
   data() {
     return {};
@@ -18,4 +19,4 @@ export default {
 };
 </script>
 
-<style lang="scss" src="../assets/stylesheets/components/hero.scss"></style>
+<style lang="scss" src="../assets/stylesheets/components/button.scss"></style>

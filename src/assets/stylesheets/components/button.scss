@@ -1,0 +1,22 @@
+.button {
+  display: inline-block;
+
+  &__link {
+    padding: 0.5rem 1rem;
+    box-shadow: 0 8px 12px 0 rgb(0 0 0 / 8%);
+    border-radius: 4px;
+    color: var(--color-white);
+    background-color: var(--button-color);
+    border-color: var(--button-color);
+    text-decoration: none;
+    font-weight: bold;
+
+    &--primary {
+      --button-color: var(--color-green);
+    }
+
+    &--secondary {
+      --button-color:  var(--color-lightblue);
+    }
+  }
+}

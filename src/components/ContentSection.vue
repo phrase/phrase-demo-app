@@ -1,5 +1,5 @@
 <template>
-  <section class="content-section centered" :class="`layout && content-section--${layout}`">
+  <section class="content-section centered" :class="layout && `content-section--${layout}`">
     <slot />
   </section>
 </template>

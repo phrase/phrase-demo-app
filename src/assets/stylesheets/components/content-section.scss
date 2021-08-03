@@ -1,7 +1,7 @@
 .content-section {
   padding: 6rem 4rem;
-}
 
-.content-section--split {
-  display: flex;
+  &--split {
+    display: flex;
+  }
 }
