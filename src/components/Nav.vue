@@ -1,7 +1,7 @@
 <template>
   <nav class="nav">
     <div class="centered-layout">
-      <a href="https://phrase.com/" class="nav__link">
+      <a href="https://phrase.com/" class="nav__link" aria-label="Back to main website">
         <img class="nav__link-image" alt="" src="../assets/phrase_logo_rgb_white.svg">
       </a>
     </div>
