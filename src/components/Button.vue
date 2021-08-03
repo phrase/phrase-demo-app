@@ -10,8 +10,8 @@
 export default {
   name: "Button",
   props: {
-    'link': String,
-    'hierarchy': String,
+    link: String,
+    hierarchy: String,
   },
   data() {
     return {};

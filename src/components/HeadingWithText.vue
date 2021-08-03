@@ -11,7 +11,7 @@
 export default {
   name: "HeadingWithText",
   props: {
-    'title': String,
+    title: String,
   },
   data() {
     return {};

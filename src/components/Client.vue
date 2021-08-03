@@ -11,8 +11,8 @@ export default {
   name: "Client",
   components: {},
   props: {
-    'link': String,
-    'name': String
+    link: String,
+    name: String
   },
   data() {
     return {};
