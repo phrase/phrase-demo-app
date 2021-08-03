@@ -42,6 +42,10 @@ export default {
 }
 </script>
 
+<style lang="scss" src="./assets/stylesheets/app.scss"></style>
+<style lang="scss" src="./assets/stylesheets/colors.scss"></style>
+<style lang="scss" src="./assets/stylesheets/typography.scss"></style>
+
 <i18n>
 {
   "en": {
@@ -53,7 +57,3 @@ export default {
   }
 }
 </i18n>
-
-<style lang="scss" src="./assets/stylesheets/shared/app.scss"></style>
-<style lang="scss" src="./assets/stylesheets/shared/colors.scss"></style>
-<style lang="scss" src="./assets/stylesheets/shared/typography.scss"></style>

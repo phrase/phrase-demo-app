@@ -18,5 +18,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" src="../assets/stylesheets/components/heading-with-text.scss"></style>

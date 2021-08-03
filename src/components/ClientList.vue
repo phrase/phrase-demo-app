@@ -26,6 +26,12 @@ export default {
 };
 </script>
 
+<style lang="scss">
+.client-list {
+  display: flex;
+}
+</style>
+
 <i18n>
 {
   "en": {
@@ -33,5 +39,3 @@ export default {
   }
 }
 </i18n>
-
-<style lang="scss" src="../assets/stylesheets/components/client-list.scss"></style>

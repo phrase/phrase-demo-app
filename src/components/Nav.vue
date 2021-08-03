@@ -17,4 +17,21 @@ export default {
 }
 </script>
 
-<style lang="scss" src="../assets/stylesheets/components/nav.scss"></style>
+<style lang="scss">
+.nav {
+  background-color: var(--color-blue);
+  padding-top: 1.7rem;
+
+  &__link {
+    display: block;
+    max-width: 85px;
+
+    &-image {
+      display: block;
+      object-fit: contain;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
+</style>
