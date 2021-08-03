@@ -29,6 +29,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../assets/stylesheets/mixins.scss";
+
 .hero {
   background-color: var(--color-blue);
   color: var(--color-white);
@@ -51,8 +53,20 @@ export default {
     margin-bottom: 1.5rem;
   }
 
-  &__button ~ &__button {
-    margin-left: 1.5rem;
+  @media (min-width: 700px) {
+    &__button ~ &__button {
+      margin-left: 1.5rem;
+    }
+  }
+
+  @include breakpoint-s {
+    &__button {
+      display: block;
+    }
+
+    &__button ~ &__button {
+      margin-top: 1.5rem;
+    }
   }
 }
 </style>

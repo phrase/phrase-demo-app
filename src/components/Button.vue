@@ -20,6 +20,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../assets/stylesheets/mixins.scss";
+
 .button {
   display: inline-block;
 
@@ -33,6 +35,10 @@ export default {
     border-color: var(--button-color);
     text-decoration: none;
     font-weight: bold;
+
+    @include breakpoint-s {
+      padding: 1rem 1.3rem;
+    }
 
     &--primary {
       --button-color: var(--color-green);

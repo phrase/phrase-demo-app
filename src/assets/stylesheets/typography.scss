@@ -1,3 +1,5 @@
+@import "mixins.scss";
+
 @font-face {
   font-family: "Source Sans Pro";
   font-weight: 600;
@@ -25,6 +27,10 @@
   font-size: 4rem;
   font-weight: 600;
   line-height: 1.2;
+
+  @include breakpoint-s {
+    font-size: 2.7rem;
+  }
 }
 
 .text-l {
@@ -32,6 +38,10 @@
   font-size: 2.5rem;
   font-weight: 600;
   line-height: var(--default-line-height);
+
+  @include breakpoint-s {
+    font-size: 2rem;
+  }
 }
 
 .text-m {
@@ -39,6 +49,10 @@
   font-size: 1.5rem;
   font-weight: 400;
   line-height: var(--default-line-height);
+
+  @include breakpoint-s {
+    font-size: 1.3rem;
+  }
 }
 
 .text-s {

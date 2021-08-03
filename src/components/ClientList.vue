@@ -32,36 +32,44 @@ export default {
 </script>
 
 <style lang="scss">
-$client-list-breakpoint-tablet: 1400px;
+@import "../assets/stylesheets/mixins.scss";
 
 .client-list {
   display: flex;
   list-style: none;
   padding: 0;
-  max-width: 100%;
-  margin: 4rem 0 0 0;
   color: var(--color-gray);
+  position: relative;
+  width: calc(100% + 5rem);
+  max-width: 100%;
+  left: 5rem;
+  margin: 4rem -5rem 0 -5rem;
 
-  @media (max-width: $client-list-breakpoint-tablet) {
+  @include breakpoint-m {
+    margin-top: 2rem;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  &__item + &__item {
-    margin-left: 2rem;
+  &__item {
+    max-width: 12rem;
+    margin: 0 1rem;
+
+    @include breakpoint-s {
+      max-width: 6rem;
+    }
   }
 
   &__item figure {
     margin: 0;
 
-    @media (max-width: $client-list-breakpoint-tablet) {
+    @include breakpoint-m {
       margin: 2rem 0;
     }
   }
 
   &__item img {
     width: 100%;
-    max-width: 12rem;
     margin-bottom: .5rem;
   }
 }

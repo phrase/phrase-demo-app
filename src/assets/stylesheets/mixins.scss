@@ -1,0 +1,14 @@
+$breakpoint-s: 700px;
+$breakpoint-m: 1000px;
+
+@mixin breakpoint-s {
+  @media (max-width: #{$breakpoint-s}) {
+    @content;
+  }
+}
+
+@mixin breakpoint-m {
+  @media (max-width: #{$breakpoint-m}) {
+    @content;
+  }
+}
