@@ -20,10 +20,10 @@ export default {
 @import "../assets/stylesheets/mixins.scss";
 
 .content-section {
-  margin: 6rem 4rem 10rem;
+  padding: 6rem 4rem 6rem;
 
   @include breakpoint-m {
-    margin: 4rem 0;
+    padding: 4rem 0;
   }
 
   &--split {
@@ -54,12 +54,8 @@ export default {
     text-align: center;
   }
 
-  &:last-child {
-    margin-bottom: 6rem;
-
-    @include breakpoint-m {
-      margin-bottom: 4rem;
-    }
+  &:not(:last-child) {
+    border-bottom: 2px solid var(--color-lightgray);
   }
 }
 </style>
