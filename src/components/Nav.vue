@@ -1,6 +1,6 @@
 <template>
   <nav class="nav">
-    <div class="centered">
+    <div class="centered-layout">
       <a href="https://phrase.com/" class="nav__link">
         <img class="nav__link-image" alt="" src="../assets/phrase_logo_rgb_white.svg">
       </a>

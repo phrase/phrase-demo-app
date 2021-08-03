@@ -9,7 +9,7 @@
       <img alt="" src="./assets/integrate.png">
     </ContentSection>
 
-    <ContentSection>
+    <ContentSection layout="centered">
       <h2 class="text-l">{{ $t("clients_title") }}</h2>
       <ClientList/>
     </ContentSection>

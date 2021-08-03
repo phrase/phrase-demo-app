@@ -1,7 +1,7 @@
 <template>
   <figure>
     <img :alt="`Logo of ${name}`" :src="require(`@/assets/clients/${link}`)">
-    <figcaption>{{ name }}</figcaption>
+    <figcaption class="text-s">{{ name }}</figcaption>
   </figure>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <section class="hero">
-    <div class="centered">
+    <div class="centered-layout">
       <h2 class="text-xl hero__title">{{ $t("hero_title") }}</h2>
       <p class="text-m hero__description">{{ $t("hero_description") }}</p>
       <Button class="hero__button" hierarchy="primary"

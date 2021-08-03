@@ -1,5 +1,5 @@
 <template>
-  <section class="content-section centered" :class="layout && `content-section--${layout}`">
+  <section class="content-section centered-layout" :class="layout && `content-section--${layout}`">
     <slot/>
   </section>
 </template>
@@ -24,12 +24,17 @@ export default {
     display: grid;
     grid-template-columns: 3fr 1fr 3fr;
     grid-column-gap: 4rem;
+    justify-items: center;
 
     img {
       max-width: 100%;
       max-height: 100%;
       grid-column: span 2;
     }
+  }
+
+  &--centered {
+    text-align: center;
   }
 
   &:last-child {
