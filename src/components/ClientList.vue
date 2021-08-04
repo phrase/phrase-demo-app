@@ -33,12 +33,13 @@ export default {
 
 <style lang="scss">
 @import "../assets/stylesheets/mixins.scss";
+@import "../assets/stylesheets/colors.scss";
 
 .client-list {
   display: flex;
   list-style: none;
   padding: 0;
-  color: var(--color-gray);
+  color: $pa-color-nickel;
   position: relative;
   width: calc(100% + 5rem);
   max-width: 100%;

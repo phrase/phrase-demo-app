@@ -15,8 +15,10 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../assets/stylesheets/colors.scss";
+
 .nav {
-  background-color: var(--color-blue);
+  background-color: $pa-color-blue;
   padding-top: 1.7rem;
 
   &__link {

@@ -15,6 +15,7 @@ export default {
 
 <style lang="scss">
 @import "../assets/stylesheets/mixins.scss";
+@import "../assets/stylesheets/colors.scss";
 
 .content-section {
   padding: 6rem 4rem 6rem;
@@ -53,7 +54,7 @@ export default {
   }
 
   &:not(:last-child) {
-    border-bottom: 2px solid var(--color-lightgray);
+    border-bottom: 2px solid $pa-color-silicon;
   }
 }
 </style>

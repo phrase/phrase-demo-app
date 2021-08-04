@@ -1,10 +1,13 @@
-:root {
-  --color-blue: #0091eb;
-  --color-lightblue: #3eaaee;
-  --color-lightblue-hover: #47aeef;
-  --color-green: #51e05d;
-  --color-green-hover: #26d835;
-  --color-gray: #B1B1B1;
-  --color-lightgray: #F7F7F7;
-  --color-white: #ffffff;
-}
+// Primary Colors
+$pa-color-blue: #0091eb;
+$pa-color-green: #51e05d;
+$pa-color-light-blue: #3eaaee;
+
+// Primary Colors: Hover/Feedback
+$pa-color-green-fb: #26d835;
+$pa-color-light-blue-fb: #47aeef;
+
+// Gray Colors
+$pa-color-nickel: #adadad;
+$pa-color-silicon: #f7f7f7;
+$pa-color-white: #fff;

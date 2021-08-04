@@ -27,10 +27,11 @@ export default {
 
 <style lang="scss">
 @import "../assets/stylesheets/mixins.scss";
+@import "../assets/stylesheets/colors.scss";
 
 .hero {
-  background-color: var(--color-blue);
-  color: var(--color-white);
+  background-color: $pa-color-blue;
+  color: $pa-color-white;
   text-align: center;
   padding: 6rem 0;
 
