@@ -29,7 +29,6 @@ export default {
     display: grid;
     grid-template-columns: 4fr 1fr 4fr;
     grid-column-gap: 4rem;
-    justify-items: center;
 
     @include breakpoint-m {
       grid-template-columns: 1fr;

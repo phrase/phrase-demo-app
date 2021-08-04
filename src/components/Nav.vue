@@ -23,7 +23,7 @@ export default {
 
   &__link {
     display: block;
-    max-width: 85px;
+    max-width: 100px;
 
     &-image {
       display: block;
