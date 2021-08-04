@@ -24,13 +24,11 @@ export default {
   border-radius: 4px;
   color: var(--color-white);
   background-color: var(--button-color);
-  border-color: var(--button-color);
   text-decoration: none;
   font-weight: bold;
 
   &:hover {
     background-color: var(--button-color-hover);
-    border-color: var(--button-color-hover);
     transition: background-color 150ms;
   }
 

@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import i18n from './i18n'
+import 'normalize.css/normalize.css'
 
 Vue.config.productionTip = false
 
