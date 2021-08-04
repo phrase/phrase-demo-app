@@ -1,31 +1,17 @@
 @import "mixins.scss";
 
-@font-face {
-  font-family: "Source Sans Pro";
-  font-weight: 600;
-  font-style: normal;
-  font-display: auto;
-  src: local("Source Sans Pro"), url(~@/assets/fonts/SourceSansPro-SemiBold.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "Source Sans Pro";
-  font-weight: 400;
-  font-style: normal;
-  font-display: auto;
-  src: local("Source Sans Pro"), url(~@/assets/fonts/SourceSansPro-Regular.ttf) format("truetype");
-}
-
 :root {
   --font-family: "Source Sans Pro", "Helvetica Neue", helvetica, arial, sans-serif;
   --default-line-height: 1.3;
+  --font-weight-regular: 400;
+  --font-weight-bold: 600;
   font-size: 16px;
 }
 
 .text-xl {
   font-family: var(--font-family);
   font-size: 4rem;
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
   line-height: 1.2;
 
   @include breakpoint-s {
@@ -36,7 +22,7 @@
 .text-l {
   font-family: var(--font-family);
   font-size: 2.5rem;
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
   line-height: var(--default-line-height);
 
   @include breakpoint-s {
@@ -47,7 +33,7 @@
 .text-m {
   font-family: var(--font-family);
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: var(--font-weight-regular);
   line-height: var(--default-line-height);
 
   @include breakpoint-s {
@@ -55,9 +41,13 @@
   }
 }
 
+.text-m--bold {
+  font-weight: var(--font-weight-bold);
+}
+
 .text-s {
   font-family: var(--font-family);
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
   line-height: var(--default-line-height);
 }

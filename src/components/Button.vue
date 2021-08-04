@@ -1,5 +1,5 @@
 <template>
-  <a :class="`text-m button button--${hierarchy}`" :href="link" target="_blank">
+  <a :class="`text-m text-m--bold button button--${hierarchy}`" :href="link" target="_blank">
     <slot/>
   </a>
 </template>
@@ -25,7 +25,6 @@ export default {
   color: var(--color-white);
   background-color: var(--button-color);
   text-decoration: none;
-  font-weight: bold;
 
   &:hover {
     background-color: var(--button-color-hover);
