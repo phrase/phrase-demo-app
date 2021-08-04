@@ -21,10 +21,7 @@ export default {
   name: "Hero",
   components: {
     Button,
-  },
-  data() {
-    return {};
-  },
+  }
 };
 </script>
 

@@ -10,10 +10,7 @@
 
 <script lang="ts">
 export default {
-  name: 'Nav',
-  data() {
-    return {}
-  }
+  name: 'Nav'
 }
 </script>
 

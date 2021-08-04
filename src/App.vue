@@ -6,7 +6,7 @@
       <HeadingWithText :title="$t('integrate_title')">
         {{ $t("integrate_text") }}
       </HeadingWithText>
-      <img alt="" src="./assets/integrate.png">
+      <img alt="A website with the integrated In-context Editor" src="./assets/integrate.png">
     </ContentSection>
 
     <ContentSection layout="centered">
@@ -15,7 +15,7 @@
     </ContentSection>
 
     <ContentSection layout="split">
-      <img alt="" src="./assets/advantages.png">
+      <img alt="Interacting with the In-context Editor" src="./assets/advantages.png">
       <HeadingWithText :title="$t('advantages_title')">
         {{ $t("advantages_text") }}
       </HeadingWithText>

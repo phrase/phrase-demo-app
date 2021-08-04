@@ -9,13 +9,9 @@
 
 export default {
   name: "Client",
-  components: {},
   props: {
     link: String,
     name: String
-  },
-  data() {
-    return {};
-  },
+  }
 };
 </script>

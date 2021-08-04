@@ -12,10 +12,7 @@ export default {
   name: "HeadingWithText",
   props: {
     title: String,
-  },
-  data() {
-    return {};
-  },
+  }
 };
 </script>
 

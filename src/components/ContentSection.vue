@@ -9,10 +9,7 @@ export default {
   name: "ContentSection",
   props: {
     layout: String
-  },
-  data() {
-    return {};
-  },
+  }
 };
 </script>
 
@@ -27,6 +24,7 @@ export default {
   }
 
   &--split {
+    display: flex; /* IE fallback */
     display: grid;
     grid-template-columns: 4fr 1fr 4fr;
     grid-column-gap: 4rem;
