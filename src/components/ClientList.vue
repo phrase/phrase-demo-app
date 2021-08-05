@@ -75,11 +75,3 @@ export default {
   }
 }
 </style>
-
-<i18n>
-{
-  "en": {
-    "hero_title": ""
-  }
-}
-</i18n>

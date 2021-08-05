@@ -72,14 +72,3 @@ export default {
   }
 }
 </style>
-
-<i18n>
-{
-  "en": {
-    "hero_title": "",
-    "hero_description": "",
-    "hero_link_docs": "",
-    "hero_link_code": ""
-  }
-}
-</i18n>

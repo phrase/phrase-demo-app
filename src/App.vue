@@ -45,15 +45,3 @@ export default {
 <style lang="scss" src="./assets/stylesheets/app.scss"></style>
 <style lang="scss" src="./assets/stylesheets/colors.scss"></style>
 <style lang="scss" src="./assets/stylesheets/typography.scss"></style>
-
-<i18n>
-{
-  "en": {
-    "integrate_title": "",
-    "integrate_text": "",
-    "clients_title": "",
-    "advantages_title": "",
-    "advantages_text": ""
-  }
-}
-</i18n>
