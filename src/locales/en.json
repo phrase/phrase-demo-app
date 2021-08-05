@@ -1,11 +1,11 @@
 {
-  "hero_title": "",
-  "hero_description": "",
-  "hero_link_docs": "",
-  "hero_link_code": "",
-  "integrate_title": "",
-  "integrate_text": "",
-  "clients_title": "",
-  "advantages_title": "",
-  "advantages_text": ""
+  "hero_title": "Translate a Website While Looking at It",
+  "hero_description": "Click the pen icon on the text and interact with our In-context Editor in the lower half of the screen. Change the original text or click the flag icon to change languages. Try it out!",
+  "hero_link_docs": "View our documentation",
+  "hero_link_code": "See source code",
+  "integrate_title": "Integrate the Phrase In-context Editor into your existing application",
+  "integrate_text": "The Phrase In-context Editor can be integrated within almost any web application and provides you with the ability to translate content directly on your site. Now, you’re able to see the translations right where they belong.",
+  "clients_title": "Don’t worry, we support your tech stack:",
+  "advantages_title": "Minimize errors",
+  "advantages_text": "With the In-context Editor, clients like Fair Trade and Jimdo are able to minimize errors by giving translators insight into the context of the translation and letting them edit the content right on the spot."
 }
