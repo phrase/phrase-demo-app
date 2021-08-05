@@ -36,4 +36,3 @@ npm run lint
 - [vue-i18n-phrase-in-context-editor](https://www.npmjs.com/package/vue-i18n-phrase-in-context-editor)
 - [vue-i18n](https://www.npmjs.com/package/vue-i18n)
 - [vue-cli-plugin-i18n](https://www.npmjs.com/package/vue-cli-plugin-i18n)
-- [vue-i18n-loader](https://github.com/intlify/vue-i18n-loader/tree/master)
