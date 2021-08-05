@@ -1,11 +1,11 @@
 {
-  "hero_title": "",
-  "hero_description": "",
-  "hero_link_docs": "",
-  "hero_link_code": "",
-  "integrate_title": "",
-  "integrate_text": "",
-  "clients_title": "",
-  "advantages_title": "",
-  "advantages_text": ""
+  "hero_title": "Übersetze Texte direkt auf deiner Website",
+  "hero_description": "Jeder übersetzbare Text ist mit einem Stift-Icon versehen. Wenn du das Icon anklickst, erscheint der In-Context-Editor, mit dem du den Originaltext ändern kannst. Wechsle die Sprachen, in dem du auf das Flaggen-Icon klickst – probiere es aus!",
+  "hero_link_docs": "Zur Dokumentation",
+  "hero_link_code": "Sieh dir den Quelltext an",
+  "integrate_title": "Verbinde den Phrase In-Context Editor mit deiner Anwendung",
+  "integrate_text": "Der Phrase In-Context Editor kann in fast alle Webanwendungen integriert werden. Übersetzer*innen können Texte direkt auf der Website hinzufügen oder ändern - genau dort, wo sie auch zu sehen sind",
+  "clients_title": "Wir unterstützen deinen Tech Stack:",
+  "advantages_title": "Vermeide Übersetzungsfehler",
+  "advantages_text": "Mit dem In-Context Editor können Unternehmen wie Fair Trade und Jimdo Fehler minimieren. Das Übersetzungsteam sieht den Kontext auf einen Blick und kann Texte direkt am richtigen Ort ändern."
 }
