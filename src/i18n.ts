@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueI18n, { LocaleMessages } from 'vue-i18n'
 import VueI18nPhraseInContextEditor from 'vue-i18n-phrase-in-context-editor'
+import _escape from 'lodash/escape';
 
 Vue.use(VueI18n)
 
@@ -25,6 +26,7 @@ const vueI18n = new VueI18n({
 
 new VueI18nPhraseInContextEditor(vueI18n, {
   phraseEnabled: true,
+  sanitize: _escape,
   projectId: '00000000000000004158e0858d2fa45c',
   autoLogin: {
     perform: true,
