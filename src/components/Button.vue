@@ -1,6 +1,6 @@
 <template>
   <a :class="`text-m text-m--bold button button--${hierarchy}`" :href="link" target="_blank">
-    <slot/>
+    <slot />
   </a>
 </template>
 
@@ -20,31 +20,32 @@ export default {
 
 .button {
   display: inline-block;
-  padding: .75rem 1.5rem;
-  box-shadow: 0 8px 12px 0 rgb(0 0 0 / 8%);
-  border-radius: 4px;
-  color: $pa-color-white;
+  padding: .5rem 1.8rem .7rem;
+  border-radius: 30px;
+  font-weight: var(--font-weight-bold);
+  color: var(--sds-color-neutral-10);
   text-decoration: none;
-
-  &:hover {
-    transition: background-color 150ms;
-  }
+  transition: background-color 150ms, color 150ms;
 
   @include breakpoint-s {
     padding: 1rem 1.3rem;
   }
 
   &--primary {
-    background-color: $pa-color-green;
+    background-color: var(--sds-color-success-50);
+    color: var(--sds-color-success-90);
     &:hover {
-      background-color: $pa-color-green-fb;
+      color: var(--sds-color-neutral-90);
+      background-color: var(--sds-color-success-70);
     }
   }
 
   &--secondary {
-    background-color: $pa-color-light-blue;
+    background-color: var(--sds-color-neutral-20);
+    border: 2px solid var(--sds-color-neutral-90);
+    color: var(--sds-color-neutral-90);
     &:hover {
-      background-color: $pa-color-light-blue-fb;
+      background-color: var(--sds-color-neutral-30);
     }
   }
 }

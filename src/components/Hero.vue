@@ -3,8 +3,7 @@
     <div class="centered-layout">
       <h2 class="text-xl hero__title">{{ $t("hero_title") }}</h2>
       <p class="text-m hero__description">{{ $t("hero_description") }}</p>
-      <Button class="hero__button" hierarchy="primary"
-              link="https://help.phrase.com/help/set-up-in-context-editor">
+      <Button class="hero__button" hierarchy="primary" link="https://help.phrase.com/help/set-up-in-context-editor">
         {{ $t("hero_link_docs") }}
       </Button>
       <Button class="hero__button" hierarchy="secondary" link="https://github.com/phrase/phrase-demo-app">
@@ -30,10 +29,10 @@ export default {
 @import "../assets/stylesheets/colors.scss";
 
 .hero {
-  background-color: $pa-color-blue;
-  color: $pa-color-white;
+  background-color: var(--sds-color-neutral-20);
+  color: var(--sds-color-neutral-90);
   text-align: center;
-  padding: 6rem 0;
+  padding: 4rem 0;
 
   @include breakpoint-s {
     padding: 3rem 0;
