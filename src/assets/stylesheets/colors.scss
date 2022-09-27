@@ -1,13 +1,60 @@
-// Primary Colors
-$pa-color-blue: #0091eb;
-$pa-color-green: #51e05d;
-$pa-color-light-blue: #3eaaee;
-
-// Primary Colors: Hover/Feedback
-$pa-color-green-fb: #26d835;
-$pa-color-light-blue-fb: #47aeef;
-
-// Gray Colors
-$pa-color-nickel: #adadad;
-$pa-color-silicon: #f7f7f7;
-$pa-color-white: #fff;
+/* theme tokens */
+:root {
+  --sds-color-warning-10: #fff9cc;
+  --sds-color-warning-20: #fff499;
+  --sds-color-warning-30: #ffeb48;
+  --sds-color-warning-50: #ffe300;
+  --sds-color-warning-70: #bea900;
+  --sds-color-warning-80: #807200;
+  --sds-color-warning-90: #403900;
+  --sds-color-success-10: #ebfefa;
+  --sds-color-success-20: #c4fdf0;
+  --sds-color-success-30: #a4f7e0;
+  --sds-color-success-50: #03eab3;
+  --sds-color-success-70: #22c69f;
+  --sds-color-success-80: #027361;
+  --sds-color-success-90: #0c4a3b;
+  --sds-color-neutral-10: #ffffff;
+  --sds-color-neutral-20: #f3f3f3;
+  --sds-color-neutral-30: #dfdfdf;
+  --sds-color-neutral-40: #c2c2c2;
+  --sds-color-neutral-50: #a2a2a2;
+  --sds-color-neutral-70: #505050;
+  --sds-color-neutral-80: #292929;
+  --sds-color-neutral-90: #181818;
+  --sds-color-flag-10: #fff7ed;
+  --sds-color-flag-20: #ffe6c5;
+  --sds-color-flag-30: #ffb06f;
+  --sds-color-flag-50: #fb923c;
+  --sds-color-flag-70: #de6006;
+  --sds-color-flag-80: #c2410c;
+  --sds-color-flag-90: #6c2810;
+  --sds-color-error-10: #fbedeb;
+  --sds-color-error-20: #f5ccc6;
+  --sds-color-error-30: #ef8677;
+  --sds-color-error-50: #e84831;
+  --sds-color-error-70: #bd2c17;
+  --sds-color-error-80: #932414;
+  --sds-color-error-90: #5c1509;
+  --sds-color-click-10: #eaf2f9;
+  --sds-color-click-20: #c7e0f2;
+  --sds-color-click-30: #5aa1f0;
+  --sds-color-click-50: #1080fc;
+  --sds-color-click-70: #0060d3;
+  --sds-color-click-80: #054899;
+  --sds-color-click-90: #0b2556;
+  --sds-color-brand-10: #f0f9ff;
+  --sds-color-brand-20: #e0f2fe;
+  --sds-color-brand-30: #bae6fd;
+  --sds-color-brand-50: #0091eb;
+  --sds-color-brand-70: #0284c7;
+  --sds-color-brand-80: #0369a1;
+  --sds-color-brand-90: #0c4a6e;
+  --sds-color-accent-10: #fbebf9;
+  --sds-color-accent-20: #f2baed;
+  --sds-color-accent-30: #f373dd;
+  --sds-color-accent-50: #e93dcb;
+  --sds-color-accent-70: #b21d97;
+  --sds-color-accent-80: #881a74;
+  --sds-color-accent-90: #35051b;
+}

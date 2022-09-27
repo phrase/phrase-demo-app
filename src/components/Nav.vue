@@ -18,8 +18,8 @@ export default {
 @import "../assets/stylesheets/colors.scss";
 
 .nav {
-  background-color: $pa-color-blue;
-  padding-top: 1.7rem;
+  background-color: var(--sds-color-neutral-20);
+  padding-top: 2rem;
 
   &__link {
     display: block;
@@ -28,8 +28,7 @@ export default {
     &-image {
       display: block;
       object-fit: contain;
-      width: 100%;
-      max-width: 100%;
+      width: 150px;
     }
   }
 }

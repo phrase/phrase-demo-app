@@ -1,6 +1,6 @@
 <template>
   <section class="content-section centered-layout" :class="layout && `content-section--${layout}`">
-    <slot/>
+    <slot />
   </section>
 </template>
 
@@ -53,7 +53,7 @@ export default {
   }
 
   &:not(:last-child) {
-    border-bottom: 2px solid $pa-color-silicon;
+    border-bottom: 2px solid var(--sds-color-neutral-20);
   }
 }
 </style>

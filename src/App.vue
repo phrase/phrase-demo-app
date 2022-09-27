@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <Nav/>
-    <Hero/>
+    <Nav />
+    <Hero />
     <ContentSection layout="split">
       <HeadingWithText :title="$t('integrate_title')">
         {{ $t("integrate_text") }}
@@ -11,7 +11,7 @@
 
     <ContentSection layout="centered">
       <h2 class="text-l">{{ $t("clients_title") }}</h2>
-      <ClientList/>
+      <ClientList />
     </ContentSection>
 
     <ContentSection layout="split">

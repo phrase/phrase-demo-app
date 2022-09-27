@@ -1,7 +1,7 @@
 <template>
   <ul class="client-list">
     <li v-for="(name, link) in clients" :key="name" class="client-list__item">
-      <Client :name="name" :link="link"/>
+      <Client :name="name" :link="link" />
     </li>
   </ul>
 </template>
@@ -39,7 +39,7 @@ export default {
   display: flex;
   list-style: none;
   padding: 0;
-  color: $pa-color-nickel;
+  color: var(--sds-color-neutral-30);
   position: relative;
   width: calc(100% + 5rem);
   max-width: 100%;
