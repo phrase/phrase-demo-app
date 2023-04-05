@@ -28,6 +28,7 @@ new VueI18nPhraseInContextEditor(vueI18n, {
   phraseEnabled: true,
   sanitize: _escape,
   projectId: '00000000000000004158e0858d2fa45c',
+  accountId: '0bed59e5',
   autoLogin: {
     perform: true,
     email: "demo@phrase.com",
