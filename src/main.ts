@@ -1,11 +1,9 @@
-import Vue from 'vue'
+import { createApp } from 'vue'
 import App from './App.vue'
-import i18n from './i18n'
+import { initializeI18next } from './i18n'
 import 'normalize.css/normalize.css'
 
-Vue.config.productionTip = false
+const app = createApp(App);
+initializeI18next()
 
-new Vue({
-  i18n,
-  render: h => h(App)
-}).$mount('#app')
+app.mount('#app');
