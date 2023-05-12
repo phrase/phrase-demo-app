@@ -6594,9 +6594,10 @@ human-signals@^1.1.1:
   resolved "https://registry.yarnpkg.com/human-signals/-/human-signals-1.1.1.tgz#c5b1cd14f50aeae09ab6c59fe63ba3395fe4dfa3"
   integrity sha512-SEQu7vl8KjNL2eoGBLF3+wAjpsNfA9XMlXAYj/3EdaNfAlxKthD1xjEQfGOUhllCGGJVNY34bRr6lPINhNjyZw==
 
-"i18next-phrase-in-context-editor-post-processor@git+ssh://git@github.com:phrase/i18next-phrase-in-context-editor-post-processor.git#TSE-691":
+i18next-phrase-in-context-editor-post-processor@1.3.0:
   version "1.3.0"
-  resolved "git+ssh://git@github.com:phrase/i18next-phrase-in-context-editor-post-processor.git#09544cb870caf898adda30458d7dd220b71eab44"
+  resolved "https://registry.yarnpkg.com/i18next-phrase-in-context-editor-post-processor/-/i18next-phrase-in-context-editor-post-processor-1.3.0.tgz#e5397d2ee10d07323dc5b286889a446bf4a9bf59"
+  integrity sha512-xzoM5dgtJNy4Nn6+4H0NQ0SbdrO3oi8m0S6t0NdKt9HxjZk8BEtrEtTdFudvuGQDTGJXEgjuAbs9EQzzBKRy5A==
   dependencies:
     "@sagi.io/globalthis" "^0.0.2"
 
