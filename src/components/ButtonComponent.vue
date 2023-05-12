@@ -1,17 +1,27 @@
 <template>
-  <a :class="`text-m text-m--bold button button--${hierarchy}`" :href="link" target="_blank">
+  <a
+    :class="`text-m text-m--bold button button--${hierarchy}`"
+    :href="link"
+    target="_blank"
+  >
     <slot />
   </a>
 </template>
 
 <script lang="ts">
 export default {
-  name: "Button",
+  name: 'ButtonComponent',
   props: {
-    link: String,
-    hierarchy: String,
+    link: {
+      type: String,
+      required: true,
+    },
+    hierarchy: {
+      type: String,
+      required: true,
+    }
   }
-};
+}
 </script>
 
 <style lang="scss">

@@ -1,28 +1,45 @@
 <template>
   <section class="hero">
     <div class="centered-layout">
-      <h2 class="text-xl hero__title">{{ $t("hero_title") }}</h2>
-      <p class="text-m hero__description">{{ $t("hero_description") }}</p>
-      <Button class="hero__button" hierarchy="primary"
-        link="https://support.phrase.com/hc/en-us/articles/5784095916188">
-        {{ $t("hero_link_docs") }}
-      </Button>
-      <Button class="hero__button" hierarchy="secondary" link="https://github.com/phrase/phrase-demo-app">
-        {{ $t("hero_link_code") }}
-      </Button>
+      <h2 class="text-xl hero__title">
+        {{ t("hero_title") }}
+      </h2>
+      <p class="text-m hero__description">
+        {{ t("hero_description") }}
+      </p>
+      <ButtonComponent
+        class="hero__button"
+        hierarchy="primary"
+        link="https://support.phrase.com/hc/en-us/articles/5784095916188"
+      >
+        {{ t("hero_link_docs") }}
+      </ButtonComponent>
+      <ButtonComponent
+        class="hero__button"
+        hierarchy="secondary"
+        link="https://github.com/phrase/phrase-demo-app"
+      >
+        {{ t("hero_link_code") }}
+      </ButtonComponent>
     </div>
   </section>
 </template>
 
 <script lang="ts">
-import Button from "./Button.vue";
+import ButtonComponent from './ButtonComponent.vue'
+import { useTranslate } from '.././i18n'
 
 export default {
-  name: "Hero",
+  name: 'HeroComponent',
   components: {
-    Button,
+    ButtonComponent
+  },
+  setup () {
+    return {
+      ...useTranslate()
+    }
   }
-};
+}
 </script>
 
 <style lang="scss">
