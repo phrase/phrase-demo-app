@@ -1,16 +1,22 @@
 <template>
-  <section class="content-section centered-layout" :class="layout && `content-section--${layout}`">
+  <section
+    class="content-section centered-layout"
+    :class="layout && `content-section--${layout}`"
+  >
     <slot />
   </section>
 </template>
 
 <script lang="ts">
 export default {
-  name: "ContentSection",
+  name: 'ContentSection',
   props: {
-    layout: String
+    layout: {
+      type: String,
+      required: true,
+    },
   }
-};
+}
 </script>
 
 <style lang="scss">

@@ -1,39 +1,36 @@
-import Vue from 'vue'
-import VueI18n, { LocaleMessages } from 'vue-i18n'
-import VueI18nPhraseInContextEditor from 'vue-i18n-phrase-in-context-editor'
-import _escape from 'lodash/escape';
+import i18next from "i18next";
+import PhraseInContextEditorPostProcessor from "i18next-phrase-in-context-editor-post-processor";
+import { ref } from "vue";
 
-Vue.use(VueI18n)
+export const i18nextInstance = i18next.createInstance({
+  lng: localStorage.getItem('App::language') || 'en-US',
+  fallbackLng: 'en-US',
+  interpolation: {
+    prefix: '%{',
+    suffix: '}',
+  },
+  postProcess: ['phraseInContextEditor']
+});
 
-function loadLocaleMessages (): LocaleMessages {
-  const locales = require.context('./locales', true, /[A-Za-z0-9-_,\s]+\.json$/i)
-  const messages: LocaleMessages = {}
-  locales.keys().forEach(key => {
-    const matched = key.match(/([A-Za-z0-9-_]+)\./i)
-    if (matched && matched.length > 1) {
-      const locale = matched[1]
-      messages[locale] = locales(key)
-    }
-  })
-  return messages
+export const initializeI18next = async () => {
+  i18nextInstance.use({
+    type: 'backend',
+    read(language: string, namespace: string, callback: (errorValue: unknown, translations: unknown)=> void) {
+      // Path has to be relative to create chunks
+      import(`./locales/${language}.json`)
+        .then(resources => callback(null, resources))
+        .catch(error => callback(error, null));
+    },
+
+  }).use(new PhraseInContextEditorPostProcessor({
+    phraseEnabled: true,
+    projectId: '00000000000000004158e0858d2fa45c',
+    accountId: '0bed59e5',
+    useOldICE: false,
+  }));
+  await i18nextInstance.init();
+};
+
+export const useTranslate = () => {
+  return {t:ref(i18nextInstance.t.bind(i18nextInstance))}
 }
-
-const vueI18n = new VueI18n({
-  locale: process.env.VUE_APP_I18N_LOCALE || 'en',
-  fallbackLocale: process.env.VUE_APP_I18N_FALLBACK_LOCALE || 'en',
-  messages: loadLocaleMessages()
-});
-
-new VueI18nPhraseInContextEditor(vueI18n, {
-  phraseEnabled: true,
-  sanitize: _escape,
-  projectId: '00000000000000004158e0858d2fa45c',
-  accountId: '0bed59e5',
-  autoLogin: {
-    perform: true,
-    email: "demo@phrase.com",
-    password: "phrase"
-  }
-});
-
-export default vueI18n

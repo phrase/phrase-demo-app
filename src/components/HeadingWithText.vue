@@ -1,6 +1,8 @@
 <template>
   <div class="heading-with-text">
-    <h2 class="heading-with-text__title text-l">{{ title }}</h2>
+    <h2 class="heading-with-text__title text-l">
+      {{ title }}
+    </h2>
     <div class="text-m">
       <slot />
     </div>
@@ -9,11 +11,14 @@
 
 <script lang="ts">
 export default {
-  name: "HeadingWithText",
+  name: 'HeadingWithText',
   props: {
-    title: String,
+    title: {
+      type: String,
+      required: true,
+    },
   }
-};
+}
 </script>
 
 <style lang="scss">

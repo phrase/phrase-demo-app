@@ -1,21 +1,28 @@
 <template>
   <ul class="client-list">
-    <li v-for="(name, link) in clients" :key="name" class="client-list__item">
-      <Client :name="name" :link="link" />
+    <li
+      v-for="(name, link) in clients"
+      :key="name"
+      class="client-list__item"
+    >
+      <Client
+        :name="name"
+        :link="link"
+      />
     </li>
   </ul>
 </template>
 
 <script lang="ts">
 
-import Client from "@/components/Client.vue";
+import Client from '@/components/Client.vue'
 
 export default {
-  name: "ClientList",
+  name: 'ClientList',
   components: {
     Client
   },
-  data() {
+  data () {
     return {
       clients: {
         'rails.png': 'Ruby on Rails',
@@ -26,9 +33,9 @@ export default {
         'vue.png': 'Vue.js',
         'symfony.png': 'Symfony\xa02.x, Symfony\xa03.x'
       }
-    };
-  },
-};
+    }
+  }
+}
 </script>
 
 <style lang="scss">
