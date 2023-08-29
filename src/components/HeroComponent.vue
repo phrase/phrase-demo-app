@@ -2,24 +2,24 @@
   <section class="hero">
     <div class="centered-layout">
       <h2 class="text-xl hero__title">
-        {{ t("hero_title") }}
+        {{ $t("hero_title") }}
       </h2>
       <p class="text-m hero__description">
-        {{ t("hero_description") }}
+        {{ $t("hero_description") }}
       </p>
       <ButtonComponent
         class="hero__button"
         hierarchy="primary"
         link="https://support.phrase.com/hc/en-us/articles/5784095916188"
       >
-        {{ t("hero_link_docs") }}
+        {{ $t("hero_link_docs") }}
       </ButtonComponent>
       <ButtonComponent
         class="hero__button"
         hierarchy="secondary"
         link="https://github.com/phrase/phrase-demo-app"
       >
-        {{ t("hero_link_code") }}
+        {{ $t("hero_link_code") }}
       </ButtonComponent>
     </div>
   </section>
@@ -27,18 +27,18 @@
 
 <script lang="ts">
 import ButtonComponent from './ButtonComponent.vue'
-import { useTranslate } from '.././i18n'
+// import { useTranslate } from '.././i18n'
 
 export default {
   name: 'HeroComponent',
   components: {
     ButtonComponent
   },
-  setup () {
-    return {
-      ...useTranslate()
-    }
-  }
+  // setup () {
+  //   return {
+  //     ...useTranslate()
+  //   }
+  // }
 }
 </script>
 

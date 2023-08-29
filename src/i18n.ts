@@ -1,36 +1,34 @@
-import i18next from "i18next";
-import PhraseInContextEditorPostProcessor from "i18next-phrase-in-context-editor-post-processor";
-import { ref } from "vue";
+import i18next from 'i18next'
+import I18NextVue from 'i18next-vue'
+import { I18nextPhraseBackend } from "@phrase/i18next-backend";
 
-export const i18nextInstance = i18next.createInstance({
-  lng: localStorage.getItem('App::language') || 'en-US',
-  fallbackLng: 'en-US',
-  interpolation: {
-    prefix: '%{',
-    suffix: '}',
-  },
-  postProcess: ['phraseInContextEditor']
-});
-
-export const initializeI18next = async () => {
-  i18nextInstance.use({
-    type: 'backend',
-    read(language: string, namespace: string, callback: (errorValue: unknown, translations: unknown)=> void) {
-      // Path has to be relative to create chunks
-      import(`./locales/${language}.json`)
-        .then(resources => callback(null, resources))
-        .catch(error => callback(error, null));
+export const
+  i18nextPromise = i18next
+  .use(I18nextPhraseBackend)
+  .init({
+    lng: 'en-GB',
+    interpolation: {
+      escapeValue: false
     },
+    debug: true,
+    fallbackLng: 'en-GB',
+    backend: {
+      debug: true,
+      distribution: 'DISTRIBUTION',
+      secret: 'SECRET',
+      appVersion: '1.0.0',
+      cacheExpirationTime: 60 * 5, // time in seconds
+    },
+    // resources: {
+    //   'en-GB': {
+    //     translation: {
+    //       hero_title: 'Hello World',
+    //     }
+    //   }
+    // }
+  });
 
-  }).use(new PhraseInContextEditorPostProcessor({
-    phraseEnabled: true,
-    projectId: '00000000000000004158e0858d2fa45c',
-    accountId: '0bed59e5',
-    useOldICE: false,
-  }));
-  await i18nextInstance.init();
-};
-
-export const useTranslate = () => {
-  return {t:ref(i18nextInstance.t.bind(i18nextInstance))}
+export default function (app: any) {
+  app.use(I18NextVue, { i18next })
+  return app
 }

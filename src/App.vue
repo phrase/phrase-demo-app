@@ -3,8 +3,8 @@
     <NavBar />
     <HeroComponent />
     <ContentSection layout="split">
-      <HeadingWithText :title="t('integrate_title')">
-        {{ t("integrate_text") }}
+      <HeadingWithText :title="$t('integrate_title')">
+        {{ $t("integrate_text") }}
       </HeadingWithText>
       <img
         alt="A website with the integrated In-context Editor"
@@ -14,7 +14,7 @@
 
     <ContentSection layout="centered">
       <h2 class="text-l">
-        {{ t("clients_title") }}
+        {{ $t("clients_title") }}
       </h2>
       <ClientList />
     </ContentSection>
@@ -24,8 +24,8 @@
         alt="Interacting with the In-context Editor"
         src="./assets/advantages.png"
       >
-      <HeadingWithText :title="t('advantages_title')">
-        {{ t("advantages_text") }}
+      <HeadingWithText :title="$t('advantages_title')">
+        {{ $t("advantages_text") }}
       </HeadingWithText>
     </ContentSection>
   </div>
@@ -37,7 +37,7 @@ import HeroComponent from './components/HeroComponent.vue'
 import ContentSection from './components/ContentSection.vue'
 import HeadingWithText from '@/components/HeadingWithText.vue'
 import ClientList from '@/components/ClientList.vue'
-import { useTranslate } from './i18n'
+import { i18nextPromise } from './i18n'
 import { defineComponent } from 'vue'
 
 export default defineComponent({
@@ -49,11 +49,10 @@ export default defineComponent({
     HeroComponent,
     ContentSection
   },
-  setup () {
-    return {
-      ...useTranslate()
-    }
-  }
+  // async setup () {
+  //   await i18nextPromise
+  //   return {}
+  // }
 })
 </script>
 

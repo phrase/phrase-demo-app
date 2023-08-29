@@ -1,9 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import { initializeI18next } from './i18n'
 import 'normalize.css/normalize.css'
+import i18n from './i18n'
 
-const app = createApp(App);
-initializeI18next()
-
-app.mount('#app');
+i18n(createApp(App)).mount('#app');
