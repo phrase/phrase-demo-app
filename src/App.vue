@@ -57,6 +57,7 @@ export default defineComponent({
 })
 </script>
 
-<style lang="scss" src="./assets/stylesheets/app.scss"></style>
-<style lang="scss" src="./assets/stylesheets/colors.scss"></style>
-<style lang="scss" src="./assets/stylesheets/typography.scss"></style>
+<style lang="scss" src="./assets/stylesheets/inter.scss" />
+<style lang="scss" src="./assets/stylesheets/app.scss" />
+<style lang="scss" src="./assets/stylesheets/colors.scss" />
+<style lang="scss" src="./assets/stylesheets/typography.scss" />
