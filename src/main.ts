@@ -9,9 +9,9 @@ let params = new URLSearchParams(document.location.search);
 let version = params.get("version"); // is the string "Jonathan"
 
 if (version === "private") {
-  initializeDemoI18next();
-} else {
   initializePrivateI18next();
+} else {
+  initializeDemoI18next();
 }
 
 app.mount("#app");
