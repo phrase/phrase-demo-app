@@ -12,22 +12,25 @@ export const i18nextInstance = i18next.createInstance({
   postProcess: ['phraseInContextEditor']
 });
 
-export const initializeI18next = async () => {
-  i18nextInstance.use({
-    type: 'backend',
-    read(language: string, namespace: string, callback: (errorValue: unknown, translations: unknown)=> void) {
-      // Path has to be relative to create chunks
-      import(`./locales/${language}.json`)
-        .then(resources => callback(null, resources))
-        .catch(error => callback(error, null));
-    },
-
-  }).use(new PhraseInContextEditorPostProcessor({
-    phraseEnabled: true,
-    projectId: '00000000000000004158e0858d2fa45c',
-    accountId: '0bed59e5',
-    useOldICE: false,
-  }));
+export const initializeI18next = async (settings: { projectId: string; accountId: string }) => {
+  i18nextInstance
+    .use({
+      type: "backend",
+      read(language: string, namespace: string, callback: (errorValue: unknown, translations: unknown) => void) {
+        // Path has to be relative to create chunks
+        import(`./locales/${language}.json`)
+          .then((resources) => callback(null, resources))
+          .catch((error) => callback(error, null));
+      },
+    })
+    .use(
+      new PhraseInContextEditorPostProcessor({
+        phraseEnabled: true,
+        projectId: settings.projectId,
+        accountId: settings.accountId,
+        useOldICE: false,
+      })
+    );
   await i18nextInstance.init();
 };
 
