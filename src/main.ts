@@ -6,7 +6,7 @@ import "normalize.css/normalize.css";
 const app = createApp(App);
 
 let params = new URLSearchParams(document.location.search);
-let version = params.get("version"); // is the string "Jonathan"
+let version = params.get("version");
 
 if (version === "private") {
   // Private trial account
