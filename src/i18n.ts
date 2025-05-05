@@ -12,7 +12,7 @@ export const i18nextInstance = i18next.createInstance({
   postProcess: ['phraseInContextEditor']
 });
 
-export const initializeI18next = async () => {
+export const initializeDemoI18next = async () => {
   i18nextInstance.use({
     type: 'backend',
     read(language: string, namespace: string, callback: (errorValue: unknown, translations: unknown)=> void) {
