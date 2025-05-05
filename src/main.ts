@@ -1,9 +1,17 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import { initializeI18next } from './i18n'
-import 'normalize.css/normalize.css'
+import { createApp } from "vue";
+import App from "./App.vue";
+import { initializeDemoI18next, initializePrivateI18next } from "./i18n";
+import "normalize.css/normalize.css";
 
 const app = createApp(App);
-initializeI18next()
 
-app.mount('#app');
+let params = new URLSearchParams(document.location.search);
+let version = params.get("version"); // is the string "Jonathan"
+
+if (version === "private") {
+  initializeDemoI18next();
+} else {
+  initializePrivateI18next();
+}
+
+app.mount("#app");

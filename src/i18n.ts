@@ -31,6 +31,28 @@ export const initializeI18next = async () => {
   await i18nextInstance.init();
 };
 
+export const initializePrivateI18next = async () => {
+  i18nextInstance
+    .use({
+      type: "backend",
+      read(language: string, namespace: string, callback: (errorValue: unknown, translations: unknown) => void) {
+        // Path has to be relative to create chunks
+        import(`./locales/${language}.json`)
+          .then((resources) => callback(null, resources))
+          .catch((error) => callback(error, null));
+      },
+    })
+    .use(
+      new PhraseInContextEditorPostProcessor({
+        phraseEnabled: true,
+        projectId: "aade46a6581311e26d892ef5a11df0a9",
+        accountId: "57a99e89e4ee5de2594afa2ab6cdc4c7",
+        useOldICE: false,
+      })
+    );
+  await i18nextInstance.init();
+};
+
 export const useTranslate = () => {
   return {t:ref(i18nextInstance.t.bind(i18nextInstance))}
 }
