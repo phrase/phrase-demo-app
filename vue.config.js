@@ -17,6 +17,6 @@ module.exports = {
       enableInSFC: false,
     },
   },
-  publicPath: process.env.NODE_ENV === "production" ? "/phrase-demo-app/" : "/",
+  publicPath: process.env.NODE_ENV === "production" ? "/" : "/",
   outputDir: "dist",
 };
