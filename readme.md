@@ -1,5 +1,5 @@
-# Phrase demo app
-Demo app to showcase Phrase In-Context Editor: https://demo.phrase.com/
+# Phrase Strings demo app
+Demo app to showcase Phrase Strings In-Context Editor.
 
 ## Project setup
 
