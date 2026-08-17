@@ -2,6 +2,10 @@
 Demo app to showcase Phrase In-Context Editor: https://demo.phrase.com/
 
 ## Project setup
+
+1. Sign up for a Phrase trial account: https://eu.phrase.com/idm-ui/signup
+2. In [src/main.ts](src/main.ts), replace `accountId` and `projectId` with the values from your trial account/project.
+3. Install dependencies:
 ```
 yarn install
 ```
